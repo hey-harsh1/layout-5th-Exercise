@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        nav{
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo{
+            width: 80px; /* adjust size */
+            height: auto;
+        }
+
+        nav ul{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            margin: 0 auto; /* pushes menu to center */
+            font-size: 25px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: #0078D7;
+        }
+        main{
+            background-color: whitesmoke;
+        }
+        .card{
+            border: 2px solid black;
+            width: 255px;
+            height: auto;
+            display: inline-block;
+        }
+        .card1{
+            margin: 60px;
+            width:600px;
+            height: auto;
+            border:1px solid #ccc;
+            padding:15px;
+            box-shadow:5px 4px 8px rgba(0,0,0,0.2);
+            background-color : white;
+            font-size: 17px;
+            color: #0078D7;
+        }
+
+        .card1 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card2{
+            margin: 60px;
+            width:600px;
+            height: auto;
+            border:1px solid #ccc;
+            padding:15px;
+            box-shadow:5px 4px 8px rgba(0,0,0,0.2);
+            background-color: white;
+            font-size: 17px;
+            color: #0078D7;
+        }
+
+        .card2 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card > div >p:first-child{
+            color: black;
+        }
+
+        .para{
+            margin:14px;
+            width:95vw;
+            height: auto;
+            border:1px solid #ccc;
+            padding:15px;
+            box-shadow:5px 4px 8px rgba(0,0,0,0.2);
+            background-color: white;
+            font-size: 17px;
+            color: #0078D7;
+        }
+        .para > p:first-child{
+            color: black;
+            text-align: center;
+            font-size: 23px;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #0078D7;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+            <img src="https://www.purppledesigns.com/wp-content/uploads/2023/11/download-4.png" alt="Logo" class="logo">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Book</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="card1 card">
+            <img src="https://s7ap1.scene7.com/is/image/tatamotors/desktop-tiago-new?$BA-1920-925-D$&fit=crop&fmt=avif-alpha" alt="simple">
+            <div>
+                <p>Tata Tiago Petrol (2026):</p>
+                The 2026 Tata Tiago Petrol comes with a refreshed design, updated interiors, and modern features such as a larger touchscreen infotainment system and improved safety equipment. It continues to offer a fuel-efficient petrol engine, making it a practical and affordable city hatchback.                
+            </div>
+        </div>
+
+        <div class="card2 card">
+            <img src="https://ackodrive-prod.ackoassets.com/image/tata/tiago-ev/default/Specs.jpg" alt="ev">
+            <div>
+                <p>Tata Tiago EV (2026):</p>
+                The 2026 Tata Tiago EV gets a redesigned exterior, upgraded cabin, and two battery options offering a claimed range of up to 285 km. With fast-charging support, connected-car features, and a starting price from ₹6.99 lakh, it remains one of India's most affordable electric cars.
+            </div>
+        </div>
+
+        <div class="para">
+            <p>Why Tiago ?</p>
+            <p>The Tata Tiago is a standout choice for budget-conscious buyers seeking uncompromised safety, solid build quality, and excellent fuel efficiency. Starting at a highly competitive price point, it is ideal for navigating city traffic while offering the robust durability Tata is known for.Choosing the Tata Tiago offers several distinct advantages:Top-Tier Safety: It is one of the safest hatchbacks in its class. Built on a high-strength steel structure, it includes standard features like multiple airbags (including six in recent facelifts), ABS with EBD, and corner stability control.Reliable Performance: Equipped with a refined 1.2-litre petrol engine, it provides strong low-end torque for smooth city driving. It is also available in Petrol, EV, and iCNG (including a dual-cylinder CNG AMT) options to suit diverse driving needs.Low Running Costs: The Tiago delivers impressive mileage, keeping your daily fuel budget in check. The CNG variant pushes efficiency even further without sacrificing boot space thanks to a twin-cylinder layout.Modern Features: Despite its affordable price, it comes packed with tech like a 7-inch touchscreen, Android Auto and Apple CarPlay, premium Harman audio systems, and a digital instrument cluster.City-Friendly: With a compact footprint and small turning radius, it is incredibly easy to maneuver through dense traffic and tight parking spots.</p>
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Tata Tiago 
+    </footer>
+</body>
+</html>
